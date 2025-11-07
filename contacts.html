@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Контакти Ukrainian Craft Market. Напишіть нам щодо співпраці з українськими ремісниками.">
   <title>Контакти — Ukrainian Craft Market</title>
- <!-- <link rel="stylesheet" href="css/styles.css">-->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+<body class="page">
   <header>
     <h1>UKRAINIAN CRAFT MARKET</h1>
     <nav aria-label="Основна навігація">
@@ -20,41 +21,81 @@
     </nav>
   </header>
 
-  <main>
+  <main class="content">
     <h2>Зв’яжіться з нами</h2>
     <p>Ми завжди відкриті до співпраці з українськими ремісниками та клієнтами!</p>
 
-    <form action="#" method="post" class="contact-form">
-      <label for="name">Ваше ім’я</label>
-      <input id="name" type="text" name="name" autocomplete="name" required>
+   <form action="#" method="post" class="contact-form" novalidate>
+  <label for="name">Ваше ім’я</label>
+  <input id="name" type="text" name="name" required pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ\s]{2,}">
+  <span class="error-text">Введіть лише літери (мінімум 2 символи)</span>
 
-      <label for="email">Електронна пошта</label>
-      <input id="email" type="email" name="email" autocomplete="email" required>
+  <label for="email">Електронна пошта</label>
+  <input id="email" type="email" name="email" required>
+  <span class="error-text">Введіть правильну адресу пошти (наприклад, test@gmail.com)</span>
 
-      <label for="message">Повідомлення</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+  <label for="phone">Телефон</label>
+  <input id="phone" type="tel" name="phone" required pattern="\d{10}">
+  <span class="error-text">Введіть 10 цифр без пробілів (наприклад, 0931234567)</span>
 
-      <button type="submit">Надіслати</button>
-    </form>
+  <label for="message">Повідомлення</label>
+  <textarea id="message" name="message" rows="4" required minlength="5"></textarea>
+  <span class="error-text">Поле не може бути порожнім (мінімум 5 символів)</span>
+
+  <button type="submit">Надіслати</button>
+</form>
   </main>
 
+  <!-- ЄДИНИЙ ФУТЕР (як на головній) -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="contacts">
-        <a class="contact img-link" href="mailto:hello@ucraft.market">
-          <img src="img/post.png" alt="Email" width="20" height="20"> hello@ucraft.market
-        </a>
-        <a class="contact img-link" href="https://instagram.com/ucraft.market" target="_blank" rel="noopener noreferrer">
-          <img src="img/inst.png" alt="Instagram" width="20" height="20"> @ucraft.market
-        </a>
-        <a class="contact img-link" href="https://facebook.com/ucraft.market" target="_blank" rel="noopener noreferrer">
-          <img src="img/fb.png" alt="Facebook" width="20" height="20"> /ucraft.market
-        </a>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Контакти</h4>
+          <a class="contact img-link" href="mailto:ucraft.market@gmail.com">
+            <img src="img/post.jfif" alt="Email" width="20" height="20" />
+            ucraft.market@gmail.com
+          </a>
+          <a class="contact img-link" href="https://instagram.com/ucraft.market" target="_blank" rel="noopener">
+            <img src="img/inst.jfif" alt="Instagram" width="20" height="20" />
+            @ucraft.market
+          </a>
+          <a class="contact img-link" href="https://facebook.com/craft.market" target="_blank" rel="noopener">
+            <img src="img/fb.png" alt="Facebook" width="20" height="20" />
+            craft.market
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Швидкі посилання</h4>
+          <a href="index.html">Головна</a>
+          <a href="masters.html">Каталог / Майстри</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="#about">Про нас</a>
+          <a href="#blog">Блог / Новини</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Юридична інформація</h4>
+          <a href="#terms">Умови використання</a>
+          <a href="#privacy">Політика конфіденційності</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Підписка на новини</h4>
+          <form class="subscribe-form" action="#" method="post">
+            <input type="email" name="sub_email" placeholder="Ваш email" required />
+            <button type="submit">Підписатися</button>
+          </form>
+          <small>Жодного спаму — тільки корисні оновлення 💛</small>
+        </div>
       </div>
+
       <p class="copy">© <span id="year"></span> Ukrainian Craft Market</p>
     </div>
   </footer>
 
- <!-- <script src="js/main.js"></script>  -->
+  <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,71 @@
+/* --- ШРИФТИ --- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Comfortaa:wght@600;700&display=swap");
+
+/* --- КОЛЬОРОВА ПАЛІТРА --- */
+:root {
+  --blue: #0057B7;
+  --yellow: #FFD700;
+  --white: #FFFFFF;
+  --text: #2C2C2C;
+  --success: #28A745;
+  --danger: #DC3545;
+  --warning: #FD7E14;
+  --info: #007BFF;
+  --soft-blue: #E6F3FF;
+  --warm-beige: #F5F1E8;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
+ --- БАЗОВІ НАЛАШТУВАННЯ --- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--white);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content { flex: 1 0 auto; }
+.site-footer { flex-shrink: 0; }
+
+/* --- ЗАГОЛОВКИ --- */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--blue);
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.8rem; font-weight: 700; }
+h3 { font-size: 1.4rem; font-weight: 600; }
+
+/* --- АБЗАЦИ --- */
+p { margin: 0 0 1em; color: var(--text); font-size: 1rem; }
+
+/* --- ПОСИЛАННЯ --- */
+a {
+  color: var(--info);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+a:hover { color: var(--blue); text-decoration: underline; }
+
+/* --- ЄДИНИЙ ХЕДЕР ДЛЯ ВСІХ СТОРІНОК --- */
+header {
+  background-color: var(--warm-beige);
+  border-bottom: 2px solid var(--blue);
+  padding: 24px 0 16px;
+  text-align: center;
+}

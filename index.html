@@ -4,12 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ukrainian Craft Market — Головна</title>
- <!-- <link rel="stylesheet" href="css/styles.css" />-->
+  
+ <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="page">
-  <header>
-    <h1>UKRAINIAN CRAFT MARKET</h1>
-    <nav>
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <h1>Ukrainian <span>Craft Market</span></h1>
+    </div>
+
+    <!-- бургер-іконка -->
+   <button class="burger-menu" aria-label="menu">&#9776;</button>
+
+
+    <!-- навігаційні посилання -->
+    <nav class="nav-links">
       <a href="index.html" aria-current="page">Головна</a>
       <a href="masters.html">Наші майстри</a>
       <a href="contacts.html">Контакти</a>
@@ -17,7 +27,8 @@
       <a href="#blog">Блог / Новини</a>
       <a href="#faq">FAQ</a>
     </nav>
-  </header>
+  </div>
+</header>
 
   <main class="content">
     <section class="hero">
@@ -26,16 +37,18 @@
 
       <!-- карусель товарів -->
       <div class="hero-carousel" aria-label="Найкращі товари">
-        <button class="hc-arrow hc-prev" aria-label="Попередній">&#10094;</button>
-        <img src="img/t33.avif"  alt="Коробочки ручної роботи з бісеру" class="hc-slide active" />
-        <img src="img/t23.avif"  alt="Авторська тарілка з глини та металу" class="hc-slide" />
-        <img src="img/t27.avif"  alt="Домашнє варення у банці" class="hc-slide" />
-        <img src="img/t34.avif"  alt="Керамічні глечики ручної роботи" class="hc-slide" />
-        <img src="img/t31.avif"  alt="Абстрактні сережки Мінімалізм Лінії" class="hc-slide active" />
-        <img src="img/t1.avif"   alt="В'язана сумка-шопер Сонячна Ромашка" class="hc-slide active" />
-        <img src="img/t10.avif"  alt="Теплий дитячий кардиган ручної в'язки" class="hc-slide active" />
-        <button class="hc-arrow hc-next" aria-label="Наступний">&#10095;</button>
-      </div>
+  <button class="hc-arrow hc-prev" aria-label="Попередній">&#10094;</button>
+
+  <img src="img/t33.avif" alt="Коробочки ручної роботи з бісеру" class="hc-slide active" />
+  <img src="img/t23.avif" alt="Авторська тарілка з глини та металу" class="hc-slide" />
+  <img src="img/t27.avif" alt="Домашнє варення у банці" class="hc-slide" />
+  <img src="img/t34.avif" alt="Керамічні глечики ручної роботи" class="hc-slide" />
+  <img src="img/t31.avif" alt="Абстрактні сережки Мінімалізм Лінії" class="hc-slide" />
+  <img src="img/t1.avif" alt="В'язана сумка-шопер Сонячна Ромашка" class="hc-slide" />
+  <img src="img/t10.avif" alt="Теплий дитячий кардиган ручної в'язки" class="hc-slide" />
+
+  <button class="hc-arrow hc-next" aria-label="Наступний">&#10095;</button>
+</div>
 
       <p class="hero-sub">Ми об’єднуємо українських ремісників і покупців у єдиному просторі, де кожна покупка має історію, сенс і цінність.</p>
     </section>
@@ -258,6 +271,6 @@
     </div>
   </footer>
 
-  <!-- <script src="js/main.js"></script>  -->
+  <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
