@@ -1,4 +1,4 @@
-// 🟦 УНІВЕРСАЛЬНІ ФУНКЦІЇ (важливо вставити на самий початок!)
+
 const qs = (s) => document.querySelector(s);
 const qsa = (s) => document.querySelectorAll(s);
 
