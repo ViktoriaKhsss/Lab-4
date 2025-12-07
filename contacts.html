@@ -9,6 +9,8 @@
 </head>
 
 <body class="page">
+
+  <!-- 🔹 ХЕДЕР -->
   <header>
     <h1>UKRAINIAN CRAFT MARKET</h1>
     <nav aria-label="Основна навігація">
@@ -21,47 +23,53 @@
     </nav>
   </header>
 
+  <!-- 🔹 КОНТЕНТ -->
   <main class="content">
     <h2>Зв’яжіться з нами</h2>
     <p>Ми завжди відкриті до співпраці з українськими ремісниками та клієнтами!</p>
 
-   <form action="#" method="post" class="contact-form" novalidate>
+    <!-- 🔹 ФОРМА -->
+   <form id="contactForm" class="contact-form" novalidate>
+
   <label for="name">Ваше ім’я</label>
-  <input id="name" type="text" name="name" required pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ\s]{2,}">
-  <span class="error-text">Введіть лише літери (мінімум 2 символи)</span>
+  <input id="name" type="text">
+  <span class="error-text">Імʼя має містити мінімум 3 літери</span>
 
   <label for="email">Електронна пошта</label>
-  <input id="email" type="email" name="email" required>
-  <span class="error-text">Введіть правильну адресу пошти (наприклад, test@gmail.com)</span>
+  <input id="email" type="text">
+  <span class="error-text">Введіть коректний email (наприклад, test@gmail.com)</span>
 
   <label for="phone">Телефон</label>
-  <input id="phone" type="tel" name="phone" required pattern="\d{10}">
-  <span class="error-text">Введіть 10 цифр без пробілів (наприклад, 0931234567)</span>
+  <input id="phone" type="text">
+  <span class="error-text">Формат: 0931234567 (10 цифр)</span>
 
   <label for="message">Повідомлення</label>
-  <textarea id="message" name="message" rows="4" required minlength="5"></textarea>
-  <span class="error-text">Поле не може бути порожнім (мінімум 5 символів)</span>
+  <textarea id="message"></textarea>
+  <span class="error-text">Мінімум 10 символів</span>
 
   <button type="submit">Надіслати</button>
+
 </form>
   </main>
 
-  <!-- ЄДИНИЙ ФУТЕР (як на головній) -->
+  <!-- 🔹 ФУТЕР -->
   <footer class="site-footer">
     <div class="footer-inner">
+
       <div class="footer-grid">
+
         <div class="footer-col">
           <h4>Контакти</h4>
           <a class="contact img-link" href="mailto:ucraft.market@gmail.com">
-            <img src="img/post.jfif" alt="Email" width="20" height="20" />
+            <img src="img/post.jfif" alt="Email" width="20" height="20">
             ucraft.market@gmail.com
           </a>
           <a class="contact img-link" href="https://instagram.com/ucraft.market" target="_blank" rel="noopener">
-            <img src="img/inst.jfif" alt="Instagram" width="20" height="20" />
+            <img src="img/inst.jfif" alt="Instagram" width="20" height="20">
             @ucraft.market
           </a>
           <a class="contact img-link" href="https://facebook.com/craft.market" target="_blank" rel="noopener">
-            <img src="img/fb.png" alt="Facebook" width="20" height="20" />
+            <img src="img/fb.png" alt="Facebook" width="20" height="20">
             craft.market
           </a>
         </div>
@@ -85,17 +93,20 @@
         <div class="footer-col">
           <h4>Підписка на новини</h4>
           <form class="subscribe-form" action="#" method="post">
-            <input type="email" name="sub_email" placeholder="Ваш email" required />
+            <input type="email" name="sub_email" placeholder="Ваш email" required>
             <button type="submit">Підписатися</button>
           </form>
           <small>Жодного спаму — тільки корисні оновлення 💛</small>
         </div>
+
       </div>
 
       <p class="copy">© <span id="year"></span> Ukrainian Craft Market</p>
     </div>
   </footer>
 
-  <!-- <script src="js/main.js"></script> -->
+  <!-- 🔹 JS -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>

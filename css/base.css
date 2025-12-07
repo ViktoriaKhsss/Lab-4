@@ -60,7 +60,6 @@ a {
   font-weight: 600;
   transition: color 0.3s ease;
 }
-a:hover { color: var(--blue); text-decoration: underline; }
 
 /* --- ЄДИНИЙ ХЕДЕР ДЛЯ ВСІХ СТОРІНОК --- */
 header {
@@ -68,4 +67,18 @@ header {
   border-bottom: 2px solid var(--blue);
   padding: 24px 0 16px;
   text-align: center;
+}
+
+
+.nav-hover {
+  transform: scale(1.12);
+  font-weight: 700 !important;
+  color: var(--blue) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.2s ease;
+}
+.nav-links a {
+  display: inline-block;
+  transition: all 0.2s ease;
 }

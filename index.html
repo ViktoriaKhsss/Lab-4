@@ -6,6 +6,7 @@
   <title>Ukrainian Craft Market — Головна</title>
   
  <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 <body class="page">
 <header>
@@ -14,6 +15,15 @@
       <h1>Ukrainian <span>Craft Market</span></h1>
     </div>
 
+
+       <div class="theme-toggle">
+      <input type="checkbox" id="themeSwitch">
+      <label for="themeSwitch" class="toggle-label">
+        <span class="toggle-icon sun">☀️</span>
+        <span class="toggle-icon moon">🌙</span>
+      </label>
+    </div>
+    
     <!-- бургер-іконка -->
    <button class="burger-menu" aria-label="menu">&#9776;</button>
 
@@ -111,6 +121,19 @@
         Популяризувати українську культуру та ремесла у світі, надаючи майстрам інструменти для онлайн-продажів та розповідаючи історії, що стоять за кожним виробом.
       </p>
     </section>
+
+    <!-- Розширений опис сайту -->
+<div class="more-wrapper">
+  <button class="more-btn" id="moreBtn">Показати більше</button>
+
+  <div class="hidden-text" id="hiddenText">
+    Ukrainian Craft Market — онлайн-платформа, створена у 2024 році
+    для підтримки українських майстрів та малого бізнесу. 
+    Нашою метою є допомога підприємцям виходити на нову аудиторію,
+    просувати унікальні вироби та зберігати культурні традиції України.
+  </div>
+</div>
+
 
   <h2>Що кажуть наші покупці</h2>
 
@@ -267,10 +290,10 @@
         </div>
       </div>
 
-      <p class="copy">© <span id="year"></span> Ukrainian Craft Market</p>
+     <p class="date-today"><span id="current-date"></span></p>
     </div>
   </footer>
 
-  <!-- <script src="js/main.js"></script> -->
+ <script src="js/main.js"></script> 
 </body>
 </html>
